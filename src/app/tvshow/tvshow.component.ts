@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ItvShowDetails } from '../itv-show-details';
 
 @Component({
   selector: 'app-tvshow',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./tvshow.component.css']
 })
 export class TvshowComponent {
+  
+  }
 
 }
