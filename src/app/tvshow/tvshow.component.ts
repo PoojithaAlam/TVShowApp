@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ItvShowDetails } from '../itv-show-details';
+import { TvshowService } from '../tvshow.service';
 
 @Component({
   selector: 'app-tvshow',
@@ -19,10 +20,4 @@ export class TvshowComponent {
     description: "Good"
   }
 
-  // constructor(private tvShowService:TvshowService ){
-  //   this.tvShowService.getTVSHOW('girls').subscribe(data=>this.tvShowDetail)
-  // }
-
   }
-
-

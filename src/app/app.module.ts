@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import {MatToolbarModule} from '@angular/material/toolbar' 
 import {MatCardModule} from '@angular/material/card';
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TvshowComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatToolbarModule, MatCardModule, 
