@@ -10,14 +10,18 @@ import { TvshowService } from '../tvshow.service';
 
 export class TvshowComponent {
   tvShowDetail:ItvShowDetails = {
-    showName: "girls",
+    showName: "",
     image: "",
-    rating: 4,
-    language: "english",
-    genre: ["drama", "comedy"],
-    country: "US",
-    officialSite:"http",
-    description: "Good"
+    rating: 0,
+    language: "",
+    genre: [],
+    country: "",
+    officialSite:"",
+    description: ""
+  }
+
+  constructor(private tvshowService:TvshowService){
+    this.tvshowService.getTVSHOW('friends').subscribe(data=>this.tvShowDetail=data);
   }
 
   }
