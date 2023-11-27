@@ -10,13 +10,14 @@ import { TvshowService } from '../tvshow.service';
 
 export class TvshowComponent {
   tvShowDetail:ItvShowDetails = {
-    showName: "A",
-    image: "B",
-    rating: 0,
-    language: "C",
-    genre: ["drama"],
-    country: "D",
-    officialSite:"E",
-    description: "F"
+    showName: "girls",
+    image: "",
+    rating: 4,
+    language: "english",
+    genre: ["drama", "comedy"],
+    country: "US",
+    officialSite:"http",
+    description: "Good"
   }
+
   }
