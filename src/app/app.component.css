@@ -1,0 +1,12 @@
+.centeredTitle{
+ font-size: 35px;
+ margin: auto;
+ font-family: 'Courier New', Courier, monospace;
+ font-weight: bold;
+}
+
+.tvsearch{
+ text-align: center;
+ background:linear-gradient(to left, yellow,blue)
+
+}
