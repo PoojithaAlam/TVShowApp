@@ -24,8 +24,8 @@ export class TvshowService {
     language:data.language,
     genre:data.genres,
     country:data.network.country.name,
-    officialSite:data.officialSite,
-    description:(data.summary.toString())
+    officialSite:data.network.officialSite,
+    description:(data.summary).replace(/<[^>]*>/g, '')
   }
 }
 

@@ -4,8 +4,10 @@ export interface ItvShowDetailsData {
   rating: {average: number},
   language: string,
   genres: string[],
-  network: {country :{name: string}},
-  officialSite:string,
+  network: {
+    country :{name: string},
+    officialSite:string
+  },  
   summary: string
 }
 

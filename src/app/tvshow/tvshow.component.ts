@@ -21,7 +21,8 @@ export class TvshowComponent {
   }
 
   constructor(private tvshowService:TvshowService){
-    this.tvshowService.getTVSHOW('friends').subscribe(data=>this.tvShowDetail=data);
+    this.tvshowService.getTVSHOW('girls').subscribe(data=>this.tvShowDetail=data);
+    
   }
 
   }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
 
@@ -8,8 +8,8 @@ import { debounceTime } from 'rxjs/operators';
   styleUrls: ['./tvshow-search.component.css']
 })
 export class TvshowSearchComponent {
-  search = new FormControl('', [Validators.minLength(2)])
-
+  search = new FormControl('', [Validators.minLength(2)]);
+  
   constructor(){
     this.search.valueChanges
     .pipe(debounceTime(1000))
@@ -19,3 +19,5 @@ export class TvshowSearchComponent {
   }
 
 }
+
+

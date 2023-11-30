@@ -1,14 +1,26 @@
-<div style="text-align: center; align-items: center;">
+<!-- <div style="text-align: center; align-items: center;">
   <mat-toolbar color="primary"> TV show app </mat-toolbar>
-    <div> 
+  <div style = "background-color: aqua;">
+   <br><br>
+    <mat-card>
       <p> Your TV show! </p>
-    </div>
-    <div>
       <app-tvshow-search></app-tvshow-search>
-    </div>  
-  <h2> TV show details</h2>
+    </mat-card>              
+  
+  <mat-card>
+    
+    <app-tvshow></app-tvshow>
+  </mat-card>
+</div>    
+</div>
+ -->
+
+<mat-toolbar  color="primary">
+  <div class="centeredTitle">TV Show App</div>
+</mat-toolbar>
+<div class = "tvsearch"> 
+  <app-tvshow-search ></app-tvshow-search>
+</div>
   <mat-card>
     <app-tvshow></app-tvshow>
   </mat-card>
-    
-</div>
