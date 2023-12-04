@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ItvShowDetails } from '../itv-show-details';
-import { TvshowService } from '../tvshow.service';
 
 @Component({
   selector: 'app-tvshow',
@@ -9,7 +8,7 @@ import { TvshowService } from '../tvshow.service';
 })
 
 export class TvshowComponent {
-  tvShowDetail:ItvShowDetails = {
+  @Input() tvShowDetail:ItvShowDetails = {
     showName: "",
     image: "",
     rating: 0,
@@ -18,11 +17,6 @@ export class TvshowComponent {
     country: "",
     officialSite:"",
     description: ""
-  }
-
-  constructor(private tvshowService:TvshowService){
-    this.tvshowService.getTVSHOW('girls').subscribe(data=>this.tvShowDetail=data);
-    
   }
 
   }

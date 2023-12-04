@@ -3,8 +3,8 @@
   <div class="centeredTitle">TV Show App</div>
 </mat-toolbar>
 <div class = "tvsearch"> 
-  <app-tvshow-search ></app-tvshow-search>
+  <app-tvshow-search (searchEvent)="doSearch($event)"></app-tvshow-search>
 </div>
   <mat-card>
-    <app-tvshow></app-tvshow>
+    <app-tvshow [tvShowDetail]="tvShowDetailNew"></app-tvshow>
   </mat-card>
