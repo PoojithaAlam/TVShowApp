@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { debounceTime } from 'rxjs/operators';
 
@@ -8,6 +8,8 @@ import { debounceTime } from 'rxjs/operators';
   styleUrls: ['./tvshow-search.component.css']
 })
 export class TvshowSearchComponent {
+
+  @Output() searchEvent: EventEmitter<string> = new EventEmitter<string>();
   search = new FormControl('', [Validators.minLength(2)]);
   
   constructor(){
@@ -15,7 +17,8 @@ export class TvshowSearchComponent {
     .pipe(debounceTime(1000))
     .subscribe(searchValue =>{
       if(!this.search.invalid)
-    console.log(searchValue)})
+      this.searchEvent.emit(searchValue??undefined);
+  })
   }
 
 }

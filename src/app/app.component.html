@@ -1,10 +1,21 @@
-
-<mat-toolbar  color="primary">
+<mat-toolbar class="toolbar">
+  <mat-icon (click) ="onHome()">home</mat-icon>
   <div class="centeredTitle">TV Show App</div>
 </mat-toolbar>
+<!-- <mat-toolbar  color="primary">
+  <div class="centeredTitle">TV Show App</div>
+</mat-toolbar> -->
 <div class = "tvsearch"> 
-  <app-tvshow-search ></app-tvshow-search>
+  <app-tvshow-search (searchEvent) ="doSearch($event)"></app-tvshow-search>
 </div>
-  <mat-card>
-    <app-tvshow></app-tvshow>
-  </mat-card>
+<mat-card *ngIf ="searchText!==''">
+  <app-tvshow [tvShowDetail]="currentTvShow"></app-tvshow>
+</mat-card>
+ 
+<ng-container *ngIf ="searchText===''">
+  <app-homepage></app-homepage>
+</ng-container>
+
+<!-- <mat-card>
+  <app-tvshow></app-tvshow>
+</mat-card> -->

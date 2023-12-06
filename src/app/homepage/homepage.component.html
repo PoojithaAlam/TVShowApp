@@ -1,0 +1,15 @@
+<div class ="showContainer">
+ <div *ngFor = "let showItem of shows">
+   <div class ="showItem">
+     <div class ="showImage">
+       <img [src] = "showItem.show.image.medium">
+     </div>
+     <div class="showName">
+       {{showItem.show.name}}
+     </div>
+     <div class="showLanguage">
+       {{showItem.show.language}}
+     </div>
+   </div>
+ </div>  
+</div>

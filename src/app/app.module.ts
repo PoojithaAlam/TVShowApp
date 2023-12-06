@@ -12,12 +12,14 @@ import { AppComponent } from './app.component';
 import { TvshowComponent } from './tvshow/tvshow.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TvshowSearchComponent } from './tvshow-search/tvshow-search.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TvshowComponent,
-    TvshowSearchComponent
+    TvshowSearchComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

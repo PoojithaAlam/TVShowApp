@@ -19,7 +19,7 @@ export class TvshowService {
   
   return{
     showName:data.name,
-    image:data.image.medium,
+    image:data.image.original,
     rating:data.rating.average,
     language:data.language,
     genre:data.genres,

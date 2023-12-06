@@ -1,0 +1,29 @@
+.showContainer{
+ display: flex;
+ /* grid-template-columns: repeat(7,1fr); */
+ flex-wrap: wrap;
+}
+
+.showItem{
+ margin: 20px auto;
+ margin-right: 35px; 
+ background-color: #FDFEFE;
+ padding:10px;
+ border: #efefef 2px solid;
+ 
+}
+
+.showItem:hover{
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+  transition: all ease;
+}
+
+.showImage img{
+ height: 350px;
+ width: 300px;
+ border-radius: 5px;
+}
+
+.showName, .showLanguage{
+ font-family: 'Courier New', Courier, monospace;
+}

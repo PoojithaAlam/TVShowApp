@@ -1,11 +1,10 @@
-<br>
- <form color="primary">
- <mat-form-field apprearance="outline" style = "width:30%">
-  <mat-label style ="font-family: 'Courier New', Courier, monospace;">City name or postal code</mat-label>
+<form color="primary">
+ <mat-form-field apprearance="outline">
+  <mat-label>Enter show name</mat-label>
   <mat-icon matPrefix>search</mat-icon>
   <input matInput aria-label="Tv Show" matNativeControl color="green"
   [formControl]="search" />
-  <mat-hint  style ="font-family: 'Courier New', Courier, monospace;color: white;">Specify show name like 'girls'</mat-hint>
+  <!-- <mat-hint>Specify show name like 'girls'</mat-hint> -->
   <mat-error *ngIf ="search.invalid">
    Type three or more characters to search
   </mat-error>

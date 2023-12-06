@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ItvShowDetails } from '../itv-show-details';
 import { TvshowService } from '../tvshow.service';
 
@@ -9,6 +9,7 @@ import { TvshowService } from '../tvshow.service';
 })
 
 export class TvshowComponent {
+  @Input()
   tvShowDetail:ItvShowDetails = {
     showName: "",
     image: "",
@@ -20,9 +21,9 @@ export class TvshowComponent {
     description: ""
   }
 
-  constructor(private tvshowService:TvshowService){
-    this.tvshowService.getTVSHOW('girls').subscribe(data=>this.tvShowDetail=data);
+  // constructor(private tvshowService:TvshowService){
+  //   this.tvshowService.getTVSHOW('girls').subscribe(data=>this.tvShowDetail=data);
     
-  }
+  // }
 
   }
