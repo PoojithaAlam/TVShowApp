@@ -14,7 +14,7 @@ export class TvshowSearchComponent {
   
   constructor(){
     this.search.valueChanges
-    .pipe(debounceTime(1000))
+    .pipe(debounceTime(100))
     .subscribe(searchValue =>{
       if(!this.search.invalid)
       this.searchEvent.emit(searchValue??undefined);
