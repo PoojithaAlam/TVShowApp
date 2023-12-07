@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Component, Input } from '@angular/core';
 import { ItvShowDetails } from '../itv-show-details';
 
 @Component({
