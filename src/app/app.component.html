@@ -9,7 +9,7 @@
   <app-tvshow-search (searchEvent) ="doSearch($event)"></app-tvshow-search>
 </div>
 <mat-card *ngIf ="searchText!==''">
-  <app-tvshow [tvShowDetail]="currentTvShow"></app-tvshow>
+  <app-tvshow [tvShowDetail]="TvShowDetailNew"></app-tvshow>
 </mat-card>
  
 <ng-container *ngIf ="searchText===''">

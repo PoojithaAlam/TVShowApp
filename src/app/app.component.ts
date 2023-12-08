@@ -9,7 +9,7 @@ import { TvshowService } from './tvshow.service';
 })
 export class AppComponent {
   title = 'TVShowApp';
-  currentTvShow :ItvShowDetails ={
+  TvShowDetailNew :ItvShowDetails ={
     showName:"",
     language:"",
     genre:[],
@@ -30,7 +30,7 @@ export class AppComponent {
     this.searchText = searchValue;
     // console.log(this.searchText)
     const userInput = searchValue.trim();
-    this.tvShowService.getTVSHOW(searchValue).subscribe(data=> this.currentTvShow =data);
+    this.tvShowService.getTVSHOW(searchValue).subscribe(data=> this.TvShowDetailNew =data);
   }
 
   onHome(){
