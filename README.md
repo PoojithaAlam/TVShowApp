@@ -17,13 +17,6 @@ A responsive web application that allows users to search for TV shows and explor
 
 ![App Screenshot](https://github.com/PoojithaAlam/TVShowApp/blob/a706f73d736d91480162a8caf9ec9d38446c7c4e/TVSHOWAPP.png)
 
-
-## App Demonstration Link
-
-https://www.youtube.com/wat# TVShowApp
-
-Note: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
-
 # Website Link
 
 https://tvshowapp1-puh7.onrender.com/
@@ -31,6 +24,10 @@ https://tvshowapp1-puh7.onrender.com/
 # App Demonstration video 
 
 https://www.youtube.com/watch?v=4fuJAnl-eKM
+
+# Notes
+
+Note: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
 
 ## Development server
 
